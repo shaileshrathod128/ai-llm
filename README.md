@@ -1,27 +1,38 @@
-# 🔍 RAG Pipeline Demo using LangChain, FAISS & OpenAI
+## 📦 Examples Included
 
-This is a hands-on Retrieval-Augmented Generation (RAG) pipeline built using:
+This repository contains two complete, production-ready LangChain demos to showcase different real-world use cases:
 
-- LangChain
-- FAISS for vector search
-- OpenAI for LLM
+---
 
-## 💡 What It Does
+### 🔁 1. `rag-pipeline/` – Retrieval-Augmented Generation (RAG) Demo
 
-Loads text files, splits them into chunks, creates vector embeddings, and allows you to query them using an LLM. Great for building AI assistants on top of your own knowledge base.
+Build an LLM-powered assistant that answers domain-specific questions by retrieving relevant content from your own knowledge base using:
 
-## 🚀 Quick Start
+- 🧠 LangChain
+- 📚 FAISS vector search
+- 🤖 OpenAI (or any LLM)
 
-1. **Install dependencies**
+**Use Case:**
 
-```bash
-pip install -r app/requirements.txt
-```
+> “Ask questions over your company policies, PDF docs, or knowledge base with factual, grounded answers.”
 
-2. **Add your .txt files to app/docs/**
+📂 [View `rag-pipeline`](./rag-pipeline)
 
-3. **Run Python script**
+---
 
-```bash
-python app/rag_pipeline.py
-```
+### 🤖 2. `langchain-agents/` – Multi-Model LangChain Agent
+
+Create an AI assistant that dynamically chooses between models based on the type of user query:
+
+- 🔍 General Q&A → OpenAI
+- 📝 Summarization → Mistral (via Replicate)
+
+**Use Case:**
+
+> “Automatically route summarization tasks to Mistral and general questions to OpenAI.”
+
+📂 [View `langchain-agents`](./langchain-agents)
+
+---
+
+Both demos follow best practices, support `.env` secrets, and are great starting points for real-world GenAI applications.
