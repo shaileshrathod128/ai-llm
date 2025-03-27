@@ -1,0 +1,4 @@
+langchain
+openai
+replicate
+python-dotenv
